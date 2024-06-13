@@ -45,18 +45,6 @@ public class CreateOrderTest {
                 .statusCode(201).extract().body().path("track");
     }
 
-//    @After
-//    public void deleteOrderTest(){
-//        Response response = given()
-//                .contentType(ContentType.JSON)
-//                .baseUri("http://qa-scooter.praktikum-services.ru")
-//                .when()
-//                .get("/api/v1/orders/")
-//                .then()
-//                .extract().response();
-//        Integer track = response.body().path("track");
-//            createSomeOrderStep.deleteOrder(track);
-//    }
 }
 
 
